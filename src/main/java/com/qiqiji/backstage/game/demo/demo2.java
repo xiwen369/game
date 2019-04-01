@@ -21,5 +21,6 @@ public class demo2 {
         nextPage = currentPage < 10 ? currentPage + 1 : currentPage;
         System.out.println("下一页=" + nextPage);
         //我改了代码222
+        //新分子进入
     }
 }
