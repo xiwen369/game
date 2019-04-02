@@ -7,6 +7,7 @@ public class demo3 {
         b = a << 3;
         System.out.println(b);
         //你好!
+        //你不好!
     }
 
 }
