@@ -6,6 +6,7 @@ public class demo3 {
         int b;
         b = a << 3;
         System.out.println(b);
+        //你好!
     }
 
 }
