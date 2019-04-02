@@ -21,6 +21,8 @@ public class demo2 {
         nextPage = currentPage < 10 ? currentPage + 1 : currentPage;
         System.out.println("下一页=" + nextPage);
         //int分支!!!
+        //我在int分支上进行修改
+
 
 
 
