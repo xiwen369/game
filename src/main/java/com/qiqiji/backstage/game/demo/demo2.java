@@ -22,5 +22,10 @@ public class demo2 {
         System.out.println("下一页=" + nextPage);
         //我改了代码222
         //新分子进入
+        //int分支!!!
+
+
+
+
     }
 }
