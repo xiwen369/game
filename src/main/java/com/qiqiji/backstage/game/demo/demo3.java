@@ -8,6 +8,7 @@ public class demo3 {
         System.out.println(b);
         //你好!
         //你不好!
+        //真神奇!!!
     }
 
 }
