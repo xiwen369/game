@@ -1,15 +1,18 @@
 package com.qiqiji.backstage.game.demo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class demo3 {
+    private static Logger logger = LoggerFactory.getLogger(demo3.class);
     public static void main(String[] args) {
         int a = 2;
         int b;
         b = a << 3;
-        System.out.println(b);
-        //你好!
-        //你不好!
-        //真神奇!!!
-        //我在主分支上面进行变更
+        logger.info("b的值为:"+ b);
+//        System.out.println(b);
+
+
     }
 
 }
