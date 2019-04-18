@@ -18,18 +18,19 @@ import java.util.Map;
 public class CodeInfoController {
     @Autowired
     CodeInfoService codeInfoService;
-    @ApiOperation(value = "调用测试" ,  notes="调用测试")
-    @RequestMapping(value = "/GameSetting", method= RequestMethod.POST)
-    public List<CodeInfo> GameSetting(){
+
+    @ApiOperation(value = "调用测试", notes = "调用测试")
+    @RequestMapping(value = "/GameSetting", method = RequestMethod.POST)
+    public List<CodeInfo> GameSetting() {
         List<CodeInfo> codeInfoList = codeInfoService.getCodeInfoByType();
         System.out.println(codeInfoList.size());
-        if(codeInfoList==null){
+        if (codeInfoList == null) {
             CodeInfo codeInfo = new CodeInfo();
             codeInfo.setQqjCode("0001");
             codeInfo.setQqjDesc("查询游戏设置异常！");
             codeInfoList.add(codeInfo);
             return codeInfoList;
-        }else if(codeInfoList.size()==0){
+        } else if (codeInfoList.size() == 0) {
             CodeInfo codeInfo = new CodeInfo();
             codeInfo.setQqjCode("0002");
             codeInfo.setQqjDesc("查询游戏设置为空！");
@@ -39,16 +40,17 @@ public class CodeInfoController {
         return codeInfoList;
     }
 
-    @ApiOperation(value = "调用测试" ,  notes="调用测试")
-    @RequestMapping(value = "/abortUsQuery", method= RequestMethod.POST)
-    public List<CodeInfo> abortUsQuery(){
+    @ApiOperation(value = "调用测试", notes = "调用测试")
+    @RequestMapping(value = "/abortUsQuery", method = RequestMethod.POST)
+    public List<CodeInfo> abortUsQuery() {
         List<CodeInfo> codeInfoList = codeInfoService.getCodeInfoAboutUs();
+        System.out.println("关于我们信息=" + codeInfoList);
         return codeInfoList;
     }
 
-    @ApiOperation(value = "调用测试" ,  notes="调用测试")
-    @RequestMapping(value = "/aboutUsUpdate", method= RequestMethod.POST)
-    public String aboutUsUpdate(@RequestBody Map map){
+    @ApiOperation(value = "调用测试", notes = "调用测试")
+    @RequestMapping(value = "/aboutUsUpdate", method = RequestMethod.POST)
+    public String aboutUsUpdate(@RequestBody Map map) {
         String code_Desc = (String) map.get("code_Desc");
         codeInfoService.updateAboutUs(code_Desc);
         return "0000";
