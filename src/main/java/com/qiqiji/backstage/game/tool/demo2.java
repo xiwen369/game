@@ -4,12 +4,9 @@ public class demo2 {
     private static int a;
 
     public static void main(String[] args) {
-        System.out.println();
-        a= 5;
-
+        a = 5;
+        System.out.println(a);
 
     }
-
-
 
 }
