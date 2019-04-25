@@ -1,6 +1,6 @@
 package com.qiqiji.backstage.game.demo;
 
-public class demo7 {
+public class Demo7 {
     /**
      * 查找算法-二分法查找
      */

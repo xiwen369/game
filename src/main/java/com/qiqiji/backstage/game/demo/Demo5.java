@@ -1,6 +1,6 @@
 package com.qiqiji.backstage.game.demo;
 
-public class demo5 {
+public class Demo5 {
     /**
      * java5新特性,可变参数
      * */

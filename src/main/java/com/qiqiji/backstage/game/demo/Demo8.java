@@ -2,7 +2,7 @@ package com.qiqiji.backstage.game.demo;
 
 import java.util.Arrays;
 
-public class demo8 {
+public class Demo8 {
     /**
      * java自带的数组工具类
      */

@@ -1,6 +1,6 @@
 package com.qiqiji.backstage.game.demo;
 
-public class demo10 {
+public class Demo10 {
     public static void main(String[] args) {
         /**
          * 判断点和圆的关系

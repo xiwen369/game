@@ -1,6 +1,6 @@
 package com.qiqiji.backstage.game.demo;
 
-public class demo9 {
+public class Demo9 {
     /**
      * static的理解
      * ①static修饰的成员（字段/方法），随着所在的类加载而加载

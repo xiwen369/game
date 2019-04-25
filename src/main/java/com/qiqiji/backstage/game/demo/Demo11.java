@@ -1,7 +1,7 @@
 package com.qiqiji.backstage.game.demo;
 
 
-public class demo11 {
+public class Demo11 {
     public static void main(String[] args) {
         /**
          * 引用类型的强转和instanceof运算符
