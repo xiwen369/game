@@ -69,8 +69,7 @@ public class PlayGroupController {
         }
         count = pageMap.get("count");
         totalPage = pageMap.get("totalPage");
-        PackJson packJson = new PackJson();
-        String stringJson = packJson.packJson(playGroupList,count,totalPage);
+        String stringJson = PackJson.packJson(playGroupList,count,totalPage);
         return stringJson;
     }
 
@@ -82,28 +81,23 @@ public class PlayGroupController {
         if ("0".equals(flag)) {
             //0-组满预约完成的总条数
             count = playGroupService.getGroupFullCount();
-            GetTotalPage getTotalPage = new GetTotalPage();
-            totalPage = getTotalPage.getTotalPage(pageSize, count);
+            totalPage = GetTotalPage.getTotalPage(pageSize, count);
         } else if ("1".equals(flag)) {
             //1-未满预约中的总条数
             count = playGroupService.getGroupNotFullCount();
-            GetTotalPage getTotalPage = new GetTotalPage();
-            totalPage = getTotalPage.getTotalPage(pageSize, count);
+            totalPage = GetTotalPage.getTotalPage(pageSize, count);
         } else if ("2".equals(flag)) {
             //2-人未满失效，待退费的总条数
             count = playGroupService.getNeedReturnFeeCount();
-            GetTotalPage getTotalPage = new GetTotalPage();
-            totalPage = getTotalPage.getTotalPage(pageSize, count);
+            totalPage = GetTotalPage.getTotalPage(pageSize, count);
         } else if ("4".equals(flag)) {
             //4-所有的有效组局的总条数
             count = playGroupService.getEffectiveCount();
-            GetTotalPage getTotalPage = new GetTotalPage();
-            totalPage = getTotalPage.getTotalPage(pageSize, count);
+            totalPage = GetTotalPage.getTotalPage(pageSize, count);
         } else if ("5".equals(flag)) {
             //5-历史对局的总条数
             count = playGroupService.getHistoryCount(queryDate);
-            GetTotalPage getTotalPage = new GetTotalPage();
-            totalPage = getTotalPage.getTotalPage(pageSize, count);
+            totalPage = GetTotalPage.getTotalPage(pageSize, count);
         }
         map.put("count", count);
         map.put("totalPage", totalPage);

@@ -105,8 +105,7 @@ public class UserController {
         if("0".equals(flag)){
             //0-组满预约完成的总条数
             count = userService.getAllUserCount();
-            GetTotalPage getTotalPage = new GetTotalPage();
-            totalPage = getTotalPage.getTotalPage(pageSize,count);
+            totalPage = GetTotalPage.getTotalPage(pageSize,count);
         }
         map.put("count", count);
         map.put("totalPage", totalPage);
