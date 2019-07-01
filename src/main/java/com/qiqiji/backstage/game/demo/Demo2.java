@@ -3,7 +3,7 @@ package com.qiqiji.backstage.game.demo;
  * 1.计算总页数
  * 2.实现分页-->上一页,下一页
  * */
-public class demo2 {
+public class Demo2 {
     public static void main(String[] args) {
         //计算总页数
         int totalPages;//总页数

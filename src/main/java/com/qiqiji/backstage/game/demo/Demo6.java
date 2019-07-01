@@ -1,6 +1,6 @@
 package com.qiqiji.backstage.game.demo;
 
-public class demo6 {
+public class Demo6 {
 
     /**
      * 手写冒泡排序法

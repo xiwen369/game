@@ -4,7 +4,10 @@ import java.util.List;
 
 //把list组装成json的公共类
 public class PackJson {
-    public String packJson(List<Object[]> list,int count,int totalPage){
+    //私有化构造器,防止实例化,单例模式
+    private PackJson(){}
+
+    public static String packJson(List<Object[]> list,int count,int totalPage){
         String stringJson = "";
         String stringJson0;
         if (list.size()>0){

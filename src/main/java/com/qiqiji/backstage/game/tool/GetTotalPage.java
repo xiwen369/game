@@ -1,8 +1,10 @@
 package com.qiqiji.backstage.game.tool;
 
 public class GetTotalPage {
+    //构造器私有化
+    private GetTotalPage(){}
     //获取订单列表的总页数
-    public int getTotalPage(int pageSize, int count){
+    public static int getTotalPage(int pageSize, int count){
         int totalPage = 0;
         int totalCount = Integer.valueOf(count);
         if("0".equals(totalCount)){

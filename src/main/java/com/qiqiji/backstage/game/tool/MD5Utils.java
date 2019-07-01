@@ -5,6 +5,9 @@ import java.security.NoSuchAlgorithmException;
 
 
 public class MD5Utils {
+    //私有化构造器,防止实例化,单例模式
+    private MD5Utils(){}
+
     public static String getStrMD5(String inStr) {
         // 获取MD5实例
         MessageDigest md5 = null;
