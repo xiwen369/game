@@ -3,7 +3,7 @@ package com.qiqiji.backstage.game.demo;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Demo17 {
+public class DateDemo1 {
     /**
      * 计算起止时间
      */
@@ -24,7 +24,6 @@ public class Demo17 {
         Date beginTime = c.getTime();
         System.out.println("开始时间=" + beginTime.toLocaleString());
         System.out.println("结束时间=" + endTime.toLocaleString());
-
     }
 
 }

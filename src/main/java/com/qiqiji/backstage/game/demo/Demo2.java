@@ -20,14 +20,5 @@ public class Demo2 {
         System.out.println("上一页=" + previousPage);
         nextPage = currentPage < 10 ? currentPage + 1 : currentPage;
         System.out.println("下一页=" + nextPage);
-        //我改了代码222
-        //新分子进入
-        //int分支!!!
-        //我在int分支上进行修改
-
-
-
-
-
     }
 }

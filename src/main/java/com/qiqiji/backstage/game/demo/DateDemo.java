@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Demo16 {
+public class DateDemo {
     public static void main(String[] args) throws ParseException {
         /**
          * 常用类Date的用法
@@ -23,6 +23,5 @@ public class Demo16 {
         String d = sdf.format(date);
         System.out.println(d);
         System.out.println(sdf.parse(d));
-
     }
 }

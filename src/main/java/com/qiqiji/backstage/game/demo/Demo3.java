@@ -10,9 +10,6 @@ public class Demo3 {
         int b;
         b = a << 3;
         logger.info("b的值为:"+ b);
-//        System.out.println(b);
-
-
+        System.out.println(b);
     }
-
 }
