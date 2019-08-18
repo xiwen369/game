@@ -24,3 +24,16 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
     com.springms: DEBUG
+person:
+  lastName: xiwen
+  age: 18
+  boss: true
+  birth: 2018/07/07
+  maps: {k1: v1,k2: v2}
+  lists:
+    - lisi
+    - zhaowu
+  dog:
+    name: 小狗
+    age: 2
+
