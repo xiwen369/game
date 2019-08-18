@@ -1,12 +1,14 @@
 package com.qiqiji.backstage.game.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
 import javax.persistence.*;
 
 //码值表
 @Table(name = "codeinfo")
 @Entity
+@Data
 public class CodeInfo {
     @Id
     @JsonProperty(value = "codeType")
@@ -24,44 +26,4 @@ public class CodeInfo {
     @JsonProperty(value = "qqjDesc")
     @Transient
     private  String qqjDesc;
-
-    public String getQqjCode(String s) {
-        return qqjCode;
-    }
-
-    public void setQqjCode(String qqjCode) {
-        this.qqjCode = qqjCode;
-    }
-
-    public String getQqjDesc() {
-        return qqjDesc;
-    }
-
-    public void setQqjDesc(String qqjDesc) {
-        this.qqjDesc = qqjDesc;
-    }
-
-    public String getCodeType() {
-        return codeType;
-    }
-
-    public void setCodeType(String codeType) {
-        this.codeType = codeType;
-    }
-
-    public String getCodeDesc() {
-        return codeDesc;
-    }
-
-    public void setCodeDesc(String codeDesc) {
-        this.codeDesc = codeDesc;
-    }
-
-    public String getCodeContext() {
-        return codeContext;
-    }
-
-    public void setCodeContext(String codeContext) {
-        this.codeContext = codeContext;
-    }
 }
