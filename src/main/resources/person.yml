@@ -1,0 +1,12 @@
+person:
+  lastName: xiwen
+  age: 18
+  boss: true
+  birth: 2018/07/07
+  maps: {k1: v1,k2: v2}
+  lists:
+    - lisi
+    - zhaowu
+  dog:
+    name: \u5C0F\u72D7
+    age: 2
