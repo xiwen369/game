@@ -1,5 +1,5 @@
 person:
-  lastName: xiwen
+  lastName: xiwen${random.uuid}
   age: 18
   boss: true
   birth: 2018/07/07
